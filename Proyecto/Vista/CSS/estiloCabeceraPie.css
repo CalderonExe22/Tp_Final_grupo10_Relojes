@@ -1,0 +1,67 @@
+
+/*------------------estilo para nuestros apartados de menu------------------*/
+
+.transparent-header
+{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.5s;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.transparent-header.transparent {
+    background-color:transparent;
+}
+
+.transparent-header.transparent.hovered {
+    background-color: #000; /* Cambia el color de fondo al pasar el ratón por encima */
+    transition: background-color 0.5s;
+}
+
+#contenedorMenu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3% ;
+    padding-right: 3% ;
+}
+
+#mostrarMenu
+{
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+#menuDer
+{
+    display: flex;
+    justify-content: right;
+    gap: 55px;
+}
+
+.logo a
+{
+    color: black;
+    user-select: none;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/*----------------------------Estilo del footer----------------------------------*/
+
+footer
+{
+    font-family:"Arial";
+    font-size: 15px;
+    background-color: #fff;
+    color: #000;
+    margin-top: 300px;
+    margin-bottom: 0;
+}

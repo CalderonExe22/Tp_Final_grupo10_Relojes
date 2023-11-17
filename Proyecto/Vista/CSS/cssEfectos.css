@@ -1,0 +1,82 @@
+
+/*------------------estilo para nuestros apartados de menu------------------*/
+
+.links-menu
+{
+
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+    padding-bottom: 12px;
+}
+
+.links-menu::before
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: #C0b283;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.links-menu:hover
+{
+    color: #C0b283;
+}
+
+.links-menu:hover::before
+{
+    transform: scale(1);
+}
+
+/*------------------estilo para botones ------------------*/
+
+.boton
+{
+    text-decoration: none;
+    background:#000;
+    color:white;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:1.6em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+
+.boton:hover{
+    background:#C0b283;
+    color:white;
+}
+
+.boton:before,.boton:after
+{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: white;
+    transition:400ms ease all;
+}
+  .boton:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+
+.boton:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+
